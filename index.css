@@ -1,0 +1,441 @@
+/* Variables */
+:root{
+    --principal: color black;
+    --secondary:color antiquewhite ;
+
+}
+/* Reset*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*STYLECSS*/
+header{
+    background-color: black;
+    height: 200px;
+    padding-right: px;
+    list-style-type: none;
+    text-decoration: none;
+   
+}
+/*.mainprimero{
+    font-style: italic;
+    background-position: right;
+    background-attachment: fixed;
+    background-image: url(./assets/logo\ nike)
+    
+}*/
+.navbar{
+    font-style: italic;
+    display: flex;
+    align-items: flex-end;   
+
+}
+/* input {
+    display: none;
+  } */
+body{
+    min-height: 100vh;
+}
+.logo{
+    padding-left: 50px;
+    padding-top: 50px;
+}
+ ul{
+    list-style-type: none;
+    width: 100%; 
+    text-decoration: none;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between; 
+    color: var(--secondary);
+}
+h1{
+    text-align: center;
+    font-style: italic;
+}
+h2{
+    padding-left: 75px;
+}
+footer{
+    display: inline-block; width: 100%; height: 5%;
+    background-color: aqua;
+    border-bottom: 50px;
+    font-style:oblique;
+}
+a{
+    text-decoration: none;
+    color: antiquewhite;
+    display: inline-block;
+}
+.carousel_control_prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    padding: 0;
+    color: black;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease;
+}
+.mapas{
+    color: rgb(63, 66, 100);
+    font-style: italic;
+}
+.sectiontienda{
+    font-size: x-large;
+    padding-left: 5px;
+}
+.sectioncontact{
+    padding-left: 40px;
+    display: flex;
+    justify-content: space-between;
+
+}
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--principal);
+}
+/*GRIDS*/
+.camperas{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 15px;
+    grid-template-areas:
+    "campera1 campera2 campera3" 
+    "campera4 campera5 campera6";
+}
+.remeras{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1fr);
+    gap:15px ;
+    grid-template-areas: 
+    "remera1 remera2 remera3"
+    ;
+    
+}
+.buzos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1fr);
+    gap: 15px ;
+    grid-template-areas:
+    "buzo1 buzo2 buzo3" ;
+}
+.sneakerz{ 
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 15px;
+    grid-template-areas:
+    "zapas1 zapas2 zapas3"
+    "zapas4 zapas5 zapas6" ;
+}
+/* img{ 
+    width: 100%;
+} */
+/*GRID AREA CAMPERAS*/
+.campera1{
+grid-area: campera1 ;
+}
+.campera2{
+grid-area: campera2 ;
+}
+.campera3{
+grid-area: campera3 ;
+}
+.campera4{
+grid-area: campera4 ;
+}
+.campera5{
+grid-area: campera5 ;
+}
+.campera6{
+grid-area: campera6 ;
+}
+
+/*GRID AREA REMERAS*/
+.remera1{
+grid-area: remera1 ;
+}
+.remera2{
+grid-area: remera2 ;
+}
+.remera3{
+grid-area: remera3 ;
+}
+
+/*GRID AREA BUZOS*/
+.buzo1{
+grid-area: buzo1 ;
+}
+.buzo2{
+    grid-area: buzo2 ;
+}
+.buzo3{
+    grid-area: buzo3 ;
+}
+.bg-light {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity);
+}
+.nav_link{
+    text-decoration: none;
+    color: antiquewhite;
+}
+.bg-light {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity));
+}
+.navbar_toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    transition: box-shadow .15s ease-in-out;
+}
+
+
+/*MEDIAQ*/
+@media screen and (min-width:720px){
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+ }
+
+/* .sneakerz{
+        width: 100%;
+    }
+.camperas{
+    width: 100%;
+}
+.remeras{
+    width: 100%;
+} 
+.buzos{
+    width: 100%;
+}   
+a{
+text-decoration: none;
+color: rgb(255, 255, 255);
+display: inline-block;
+}
+.navbar{
+display:block; */
+/* grid-template-columns: repeat(1fr);
+grid-template-rows: repeat(1fr);
+grid-gap: 1px;
+grid-template-areas: 
+"logo"
+"area1" "area2" "area3" "area4" "area5"; */
+}
+/* .logo{
+grid-area: logo ;
+padding-top: 50px;
+padding-left: 1px;
+width: 65%;
+}
+.ul{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(1fr);
+    gap: 5px ;
+    grid-template-areas: 
+    "home sneakerz personalizar contacto tiendas";
+}
+.ul{
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    padding-inline-start: 160px;
+    box-sizing: border-box;
+}
+    
+.elemento1{grid-area: area1 ;
+}
+.elemento2{grid-area: area2 ;
+}
+.elemento3{grid-area: area3 ;
+}
+.elemento4{grid-area: area4 ;
+}
+.elemento5{grid-area: area5 ;
+} 
+.titulo1{
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(1fr);
+    grid-gap: 5px;
+    grid-template-areas: 
+    "titulo1";
+}
+.titulo1{
+    grid-area: titulo1 ;
+}
+.titulo2{
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(1fr);
+    grid-gap: 5px;
+    grid-template-areas:
+    "titulo2";
+}
+.titulo2{
+    grid-area: titulo2 ;
+}
+.camperas{
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-gap: 5px;
+    grid-template-areas:
+    "campera1" 
+    "campera2" 
+    "campera3" 
+    "campera4" 
+    "campera5" 
+    "campera6";
+    align-items: center;
+}
+
+.remeras{
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap:5px ;
+    grid-template-areas: 
+    "remera1"
+    "remera2" 
+    "remera3";
+}
+.buzos{
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 5px ;
+    grid-template-areas:
+    "buzo1"
+    "buzo2" 
+    "buzo3" ;
+}
+.campera1{
+    grid-area:campera1 ;
+}
+.campera2{
+    grid-area:campera2 ;
+}
+.campera3{
+    grid-area: campera3 ;
+}
+.campera4{
+grid-area: campera4 ;
+}
+.campera5{
+    grid-area: campera5 ;
+}
+.campera6{
+grid-area: campera6 ;
+}
+.remera1{
+    grid-area: remera1 ;
+}
+.remera2{
+    grid-area:remera2 ;
+}
+.remera3{
+grid-area: remera3 ;
+}
+
+/*GRID AREA BUZOS*/
+/* .buzo1{
+    grid-area: buzo1 ;
+}
+.buzo2{
+    grid-area: buzo2 ;
+}
+.buzo3{
+    grid-area: buzo3 ;
+}
+.sneakerz{
+display: grid;
+grid-template-columns: repeat(1fr);
+grid-template-rows: repeat(6,1fr);
+gap:5px;
+grid-template-areas:
+"zapas1"
+"zapas2"
+"zapas3"
+"zapas4"
+"zapas5" 
+"zapas6" ;
+}
+.zapas1{
+    grid-area: zapas1 ;
+}
+.zapas2{
+    grid-area: zapas2 ;
+}
+.zapas3{
+    grid-area: zapas3 ;
+}
+.zapas4{
+    grid-area: zapas4 ;
+}
+.zapas5{
+    grid-area: zapas5 ;
+}
+.zapas6{
+grid-area: zapas6 ; */
+} */
+/* header{
+    display: block;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(6,1fr);
+    gap: ;
+    grid-template-areas: 
+    "logo" 
+    "home"
+    "sneakerz "
+    "personalizar"    
+    "contacto"    
+    "tiendas"    ;
+} */
+/* .logo{
+grid-area: logo ;
+width: 110%;
+padding-left: 2px;
+padding-top: 2px;
+} */
+.home{
+grid-area: home ;
+}
+.sneakerz{
+grid-area: sneakerz ;    
+}
+.personalizar{
+grid-area: personalizar ;
+}
+.contacto{
+grid-area: contacto ;
+}
+.tiendas{
+grid-area: tiendas ;
+}
+
+  
+}

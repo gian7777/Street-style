@@ -1,0 +1,90 @@
+/* IMPORTS */
+/* MISCELANEOUS*/
+/* RESET */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* PARTIALS */
+header {
+  background-color: black;
+  height: 200px;
+  padding-right: px;
+  list-style-type: none;
+  text-decoration: none; }
+  header .navbar {
+    font-style: italic;
+    display: flex;
+    align-items: flex-end; }
+  header .navbar_toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    transition: box-shadow .15s ease-in-out; }
+  header .nav_link {
+    text-decoration: none;
+    color: antiquewhite; }
+  header ul {
+    list-style-type: none;
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--secondary); }
+  header .bg-light {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)); }
+  header .logo {
+    padding-left: 50px;
+    padding-top: 50px; }
+  header a {
+    text-decoration: none;
+    color: antiquewhite;
+    display: inline-block; }
+
+footer {
+  display: inline-block;
+  width: 100%;
+  height: 5%;
+  background-color: aqua;
+  border-bottom: 50px;
+  font-style: oblique; }
+
+/* VIEWS */
+body {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: color black; }
+  body h1 {
+    text-align: center;
+    font-style: italic; }
+  body h2 {
+    padding-left: 75px; }
+  body .carousel_control_prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    padding: 0;
+    color: black;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease; }
+
+.carousel-item {
+  display: inline-blck; }
+  .carousel-item .especificaciones1 {
+    transform: translate(1000px, -450px);
+    font-size: x-large;
+    font-style: italic; }

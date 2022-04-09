@@ -1,5 +1,7 @@
 /* IMPORTS */
+@import url("https://fonts.googleapis.com/css2?family=Anek+Odia:wght@300&family=Lora:ital@1&family=Raleway:ital,wght@1,300&display=swap");
 /* MISCELANEOUS*/
+/* Maps de fuentes */
 /* RESET */
 *,
 *::before,
@@ -12,31 +14,32 @@
 header {
   background-color: black;
   height: 200px;
-  padding-right: px;
   list-style-type: none;
   text-decoration: none; }
   header .navbar {
     font-style: italic;
     display: flex;
     align-items: flex-end; }
-  header .navbar_toggler {
-    padding: 0.25rem 0.75rem;
-    font-size: 1.25rem;
-    line-height: 1;
-    border: 1px solid transparent;
-    border-radius: 0.25rem;
-    transition: box-shadow .15s ease-in-out; }
-  header .nav_link {
-    text-decoration: none;
-    color: antiquewhite; }
-  header ul {
-    list-style-type: none;
-    width: 100%;
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: var(--secondary); }
+    header .navbar .navbar_toggler {
+      padding: 0.25rem 0.75rem;
+      font-size: 1.25rem;
+      line-height: 1;
+      border: 1px solid transparent;
+      border-radius: 0.25rem;
+      transition: box-shadow .15s ease-in-out; }
+    header .navbar .nav_link {
+      text-decoration: none;
+      color: antiquewhite; }
+    header .navbar ul {
+      list-style-type: none;
+      text-decoration: none;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end; }
+  header .nav_item--active, header .nav_item1 {
+    border-bottom: 2px solid cyan; }
   header .bg-light {
     --bs-bg-opacity: 1;
     background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)); }
@@ -86,5 +89,11 @@ body {
   display: inline-blck; }
   .carousel-item .especificaciones1 {
     transform: translate(1000px, -450px);
-    font-size: x-large;
-    font-style: italic; }
+    font-size: x-large; }
+
+.sectioncontact {
+  padding-left: 40px;
+  display: flex;
+  justify-content: space-between; }
+  .sectioncontact input {
+    font-size: x-large; }

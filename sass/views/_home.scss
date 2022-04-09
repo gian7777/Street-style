@@ -5,7 +5,7 @@ body{
     h1{
         text-align: center;
         font-style: italic;
-
+        // font-family: map-get($fuentes , Loraa );
     }
     h2{
         padding-left: 75px;
@@ -33,6 +33,18 @@ body{
     .especificaciones1{
        transform: translate(1000px,-450px);
        font-size: x-large;
-       font-style: italic;
+       font-style: map-get($fuentes , Loraa );
+    }
+    
+    
+}
+.sectioncontact{
+    padding-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    input{
+        font-size: x-large;
+        font-style: map-get($fuentes , Raleway );
+        
     }
 }

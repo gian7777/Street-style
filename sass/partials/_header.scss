@@ -1,7 +1,6 @@
 header{
     background-color: black;
     height: 200px;
-    padding-right: px;
     list-style-type: none;
     text-decoration: none;
     
@@ -10,7 +9,7 @@ header{
         display: flex;
         align-items: flex-end;   
         
-    }
+    
     .navbar_toggler {
         padding: 0.25rem 0.75rem;
         font-size: 1.25rem;
@@ -25,13 +24,20 @@ header{
     }
     ul{
         list-style-type: none;
-        width: 100%; 
         text-decoration: none;
+        width: 100%; 
         display: flex; 
-        flex-direction: row;
-        justify-content: space-between; 
-        color: var(--secondary);
+        @include flex( row, space-between, flex-end)
+       
     }
+    
+}
+.nav_item--active{ 
+    border-bottom: 2px solid cyan;
+}
+.nav_item1{
+    @extend.nav_item--active
+}
     .bg-light {
         --bs-bg-opacity: 1;
         background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity));

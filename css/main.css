@@ -1,7 +1,7 @@
 /* IMPORTS */
-@import url("https://fonts.googleapis.com/css2?family=Anek+Odia:wght@300&family=Lora:ital@1&family=Raleway:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anek+Odia:wght@300&family=Bebas+Neue&family=Lora:ital@1&family=My+Soul&family=Raleway:ital,wght@1,300&family=Syncopate&display=swap");
 /* MISCELANEOUS*/
-/* Maps de fuentes */
+/* MAPS DE PADDINGS */
 /* RESET */
 *,
 *::before,
@@ -20,6 +20,8 @@ header {
     font-style: italic;
     display: flex;
     align-items: flex-end; }
+    header .navbar .navbar-brand-active {
+      transform: translate(0px, 0px); }
     header .navbar .navbar_toggler {
       padding: 0.25rem 0.75rem;
       font-size: 1.25rem;
@@ -38,31 +40,50 @@ header {
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-end; }
-  header .nav_item--active, header .nav_item1 {
+  header .nav_item--active, header .nav_item1, header .nav_item2, header .nav_item3, header .nav_item4, header .nav_item5 {
     border-bottom: 2px solid cyan; }
   header .bg-light {
     --bs-bg-opacity: 1;
     background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)); }
-  header .logo {
-    padding-left: 50px;
-    padding-top: 50px; }
   header a {
     text-decoration: none;
     color: antiquewhite;
     display: inline-block; }
 
 footer {
+  color: antiquewhite;
   display: inline-block;
   width: 100%;
   height: 5%;
-  background-color: aqua;
+  background-color: black;
   border-bottom: 50px;
-  font-style: oblique; }
+  font-family: "Bebas Neue", cursive;
+  margin-bottom: 0px; }
+  footer .redes {
+    display: inline-block;
+    flex-direction: row; }
 
 /* VIEWS */
+html {
+  max-width: 2040px; }
+
 body {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: color black; }
+  color: color black;
+  min-height: 100vh; }
+  body .frase {
+    transform: translate(100px, -200px);
+    font-size: 3rem;
+    max-width: 40%;
+    font-family: "Lora", serif;
+    color: black; }
+  body .mundo {
+    height: 5;
+    font-family: "Bebas Neue", cursive;
+    font-size: larger;
+    color: black; }
+  body .imgs {
+    transform: translate(700px, 100px); }
   body h1 {
     text-align: center;
     font-style: italic; }
@@ -89,11 +110,18 @@ body {
   display: inline-blck; }
   .carousel-item .especificaciones1 {
     transform: translate(1000px, -450px);
-    font-size: x-large; }
+    font-size: x-large;
+    font-style: italic; }
 
 .sectioncontact {
+  min-height: 80vh;
   padding-left: 40px;
   display: flex;
-  justify-content: space-between; }
-  .sectioncontact input {
-    font-size: x-large; }
+  justify-content: space-between;
+  font-size: x-large;
+  font-family: "Anek Odia", sans-serif;
+  display: grid;
+  grid-template-columns: repeat();
+  grid-template-columns: repeat();
+  gap: fghfgh;
+  grid-template-areas: fghfghfg; }

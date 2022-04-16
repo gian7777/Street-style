@@ -1,15 +1,38 @@
+html{
+    max-width: 2040px;
+    
+}
 body{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: $principal;
-    
+    min-height: 100vh;
+    .frase{
+        transform: translate(100px, -200px);
+        font-size: 3rem;
+        max-width:40%;
+        font-family: $font-family;
+        color:  black;
+    }
+    .mundo{
+        height: 5;
+        font-family: $font-one;
+        font-size: larger;
+        color:  black;
+
+    }
+    .imgs{
+        transform: translate(700px,100px);
+    }
     h1{
         text-align: center;
         font-style: italic;
-        // font-family: map-get($fuentes , Loraa );
     }
     h2{
         padding-left: 75px;
     }
+    // .home{
+    //     background-color: rgb(149, 120, 177) ;
+    // }
     .carousel_control_prev {
         position: absolute;
         top: 0;
@@ -33,18 +56,22 @@ body{
     .especificaciones1{
        transform: translate(1000px,-450px);
        font-size: x-large;
-       font-style: map-get($fuentes , Loraa );
+       font-style: italic ;
     }
     
     
 }
 .sectioncontact{
+    min-height: 80vh;
     padding-left: 40px;
     display: flex;
     justify-content: space-between;
-    input{
-        font-size: x-large;
-        font-style: map-get($fuentes , Raleway );
-        
-    }
+    font-size: x-large;
+    font-family: $font-two;
+    display: grid;
+    grid-template-columns: repeat();
+    grid-template-columns: repeat();
+    gap:fghfgh ;
+    grid-template-areas: fghfghfg;
+
 }

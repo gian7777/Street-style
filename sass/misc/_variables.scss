@@ -1,15 +1,14 @@
 
     $principal: color black;
     $secondary:color antiquewhite ;
+    $font-one:'Bebas Neue', cursive;
+    $font-two: 'Anek Odia', sans-serif;
+    $font-three: 'Raleway', sans-serif;
+    $font-four: 'Syncopate', sans-serif;
+    $font-family: 'Lora', serif;
+   
 
-    /* Maps de fuentes */
-
-    $fuentes:(
-        Anekk: 'Anek Odia', sans-serif
-        Loraa: 'Lora', serif
-        Ralewayy: 'Raleway' sans-serif
-    );
-
+   /* MAPS DE PADDINGS */
     $paddings: (
         xlarge: 5rem,
         small:3rem,

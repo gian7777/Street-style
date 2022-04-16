@@ -1,5 +1,5 @@
 header{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     height: 200px;
     list-style-type: none;
     text-decoration: none;
@@ -8,6 +8,10 @@ header{
         font-style: italic;
         display: flex;
         align-items: flex-end;   
+    
+    .navbar-brand-active{
+        transform: translate(0px,0px);
+    }
         
     
     .navbar_toggler {
@@ -34,17 +38,27 @@ header{
 }
 .nav_item--active{ 
     border-bottom: 2px solid cyan;
+    
 }
+
 .nav_item1{
+    @extend.nav_item--active
+}
+.nav_item2{
+    @extend.nav_item--active
+}
+.nav_item3{
+    @extend.nav_item--active
+}
+.nav_item4{
+    @extend.nav_item--active
+}
+.nav_item5{
     @extend.nav_item--active
 }
     .bg-light {
         --bs-bg-opacity: 1;
         background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity));
-    }
-    .logo{
-        padding-left: 50px;
-        padding-top: 50px;
     }
     a{
         text-decoration: none;

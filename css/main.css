@@ -1,5 +1,5 @@
 /* IMPORTS */
-@import url("https://fonts.googleapis.com/css2?family=Anek+Odia:wght@300&family=Bebas+Neue&family=Lora:ital@1&family=My+Soul&family=Raleway:ital,wght@1,300&family=Syncopate&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anek+Odia:wght@300&family=Bebas+Neue&family=Lora:ital@1&family=My+Soul&family=Open+Sans:wght@300&family=PT+Serif:ital@1&family=Raleway:ital,wght@1,300&family=Syncopate&display=swap");
 /* MISCELANEOUS*/
 /* MAPS DE PADDINGS */
 /* RESET */
@@ -12,10 +12,12 @@
 
 /* PARTIALS */
 header {
-  background-color: black;
-  height: 200px;
+  background-color: #010101;
+  height: 210px;
   list-style-type: none;
   text-decoration: none; }
+  header .container-fluid {
+    background-color: black; }
   header .navbar {
     font-style: italic;
     display: flex;
@@ -23,11 +25,13 @@ header {
     header .navbar .navbar-brand-active {
       transform: translate(0px, 0px); }
     header .navbar .navbar_toggler {
+      margin-top: 2%;
+      background-color: #31c097;
       padding: 0.25rem 0.75rem;
       font-size: 1.25rem;
       line-height: 1;
       border: 1px solid transparent;
-      border-radius: 0.25rem;
+      border-radius: 0.55rem;
       transition: box-shadow .15s ease-in-out; }
     header .navbar .nav_link {
       text-decoration: none;
@@ -49,19 +53,25 @@ header {
     text-decoration: none;
     color: antiquewhite;
     display: inline-block; }
+  @media screen and (max-width: 720px) {
+    header .logoblanco {
+      width: 100%;
+      height: 100%; } }
 
 footer {
   color: antiquewhite;
   display: inline-block;
   width: 100%;
-  height: 5%;
   background-color: black;
-  border-bottom: 50px;
-  font-family: "Bebas Neue", cursive;
-  margin-bottom: 0px; }
+  font-family: "Bebas Neue", cursive; }
   footer .redes {
+    margin-left: 1%;
     display: inline-block;
     flex-direction: row; }
+  footer .foottexto {
+    transform: translate(0px, 60px);
+    text-align: center;
+    font-size: large; }
 
 /* VIEWS */
 html {
@@ -70,9 +80,13 @@ html {
 body {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: color black;
-  min-height: 100vh; }
+  min-height: 100vh;
+  font-size: 110%; }
+  body main {
+    margin-top: 5vh;
+    justify-content: space-between; }
   body .frase {
-    transform: translate(100px, -200px);
+    transform: translate(100px, 200px);
     font-size: 3rem;
     max-width: 40%;
     font-family: "Lora", serif;
@@ -82,14 +96,53 @@ body {
     font-family: "Bebas Neue", cursive;
     font-size: larger;
     color: black; }
-  body .imgs {
-    transform: translate(700px, 100px); }
+  body .fixed-action-btn.my-float-btn {
+    position: fixed;
+    right: 0;
+    bottom: 15%;
+    padding-top: 15px;
+    text-decoration: none;
+    list-style-type: none;
+    width: 8%;
+    height: 9%; }
+    body .fixed-action-btn.my-float-btn .wapp {
+      width: 30px;
+      height: 30px; }
+  body .home .intro1 {
+    width: 45%;
+    height: 40%;
+    transform: translate(800px, -180px); }
   body h1 {
     text-align: center;
-    font-style: italic; }
+    font-family: "PT", serif;
+    color: black; }
   body h2 {
     padding-left: 75px; }
-  body .carousel_control_prev {
+  body .campera1, body .d-block {
+    position: relative;
+    border: px solid transparent;
+    border-radius: 16px;
+    background: #729090;
+    background-clip: padding-box;
+    padding: 5px; }
+  body .campera1, body .d-block {
+    width: 80%;
+    height: 80%;
+    transition: 0.5s;
+    object-fit: cover; }
+  body .campera1:hover, body .d-block:hover {
+    transform: scale(1.2); }
+  body .campera1::after, body .d-block::after {
+    position: absolute;
+    top: -4px;
+    bottom: -4px;
+    left: -4px;
+    right: -4px;
+    background: linear-gradient(#a42e6e, #783057);
+    content: '';
+    z-index: -1;
+    border-radius: 16px; }
+  body .carousel-control-prev {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -105,23 +158,109 @@ body {
     border: 0;
     opacity: .5;
     transition: opacity .15s ease; }
-
-.carousel-item {
-  display: inline-blck; }
-  .carousel-item .especificaciones1 {
-    transform: translate(1000px, -450px);
+    body .carousel-control-prev .carousel_control_prev_icon {
+      transform: translate(0px, -1000px); }
+  body .carousel-item {
+    display: inline-blck; }
+    body .carousel-item .especificaciones1 {
+      transform: translate(1000px, -450px);
+      font-size: x-large;
+      font-style: italic; }
+  body .sectiontienda {
     font-size: x-large;
-    font-style: italic; }
-
-.sectioncontact {
-  min-height: 80vh;
-  padding-left: 40px;
-  display: flex;
-  justify-content: space-between;
-  font-size: x-large;
-  font-family: "Anek Odia", sans-serif;
-  display: grid;
-  grid-template-columns: repeat();
-  grid-template-columns: repeat();
-  gap: fghfgh;
-  grid-template-areas: fghfghfg; }
+    min-height: 80vh;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    justify-content: space-between; }
+    body .sectiontienda .mapas {
+      color: cyan;
+      text-decoration: none;
+      list-style-type: none; }
+    body .sectiontienda ul {
+      list-style-type: none; }
+  body .contacto {
+    min-height: 80vh; }
+    body .contacto .titlecontact {
+      margin-top: 5%; }
+    body .contacto .sectioncontact2 {
+      gap: 20px;
+      display: flex;
+      flex-direction: row;
+      margin-left: 15%;
+      text-align: center;
+      font-size: x-large;
+      font-family: "Anek Odia", sans-serif; }
+    body .contacto .sectioncontact1 {
+      gap: 20px;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 25px;
+      margin-left: 15%;
+      text-align: center;
+      font-size: x-large;
+      font-family: "Anek Odia", sans-serif; }
+    body .contacto .sectioncontact {
+      gap: 20px;
+      margin-bottom: 25px;
+      text-align: center;
+      justify-content: space-evenly;
+      font-size: x-large;
+      font-family: "Anek Odia", sans-serif; }
+  @media screen and (max-width: 720px) {
+    body header .navbar ul {
+      display: flex;
+      flex-direction: column;
+      margin-left: 0.2%;
+      align-items: flex-start;
+      justify-content: space-evenly; }
+    body .camperas, body .remeras, body .buzos, body .sneakers, body .personalizables {
+      display: grid;
+      gap: 1px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: "img1 img2" "img3 img4"; }
+    body .camp1 {
+      grid-area: img1; }
+    body .camp2 {
+      grid-area: img2; }
+    body .camp3 {
+      grid-area: img3; }
+    body .camp4 {
+      grid-area: img4; }
+    body .contacto {
+      min-height: fit-content;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-top: 0px; }
+      body .contacto .titlecontact {
+        align-items: center;
+        margin-left: 15%; }
+      body .contacto .sectioncontact2 {
+        margin-bottom: 10px; }
+        body .contacto .sectioncontact2 .consultas {
+          margin-bottom: 5px; }
+      body .contacto .sectioncontact {
+        margin-left: 15%; }
+        body .contacto .sectioncontact .email {
+          margin-left: 10%;
+          transform: translate(-17px, 0px); }
+        body .contacto .sectioncontact input {
+          line-height: 0; }
+    body .home {
+      margin-left: 50px; }
+      body .home .frase {
+        transform: none; }
+      body .home .intro1 {
+        max-width: fit-content;
+        width: 80%;
+        transform: none; }
+      body .home .intro2 {
+        max-width: fit-content;
+        width: 80%;
+        display: none; }
+    body .home .intro1 {
+      margin-bottom: 10px; } }

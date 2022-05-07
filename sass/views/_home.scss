@@ -6,8 +6,13 @@ body{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: $principal;
     min-height: 100vh;
+    font-size: 110%;
+    main{
+        margin-top: 5vh ;
+        justify-content: space-between;
+    }
     .frase{
-        transform: translate(100px, -200px);
+        transform: translate(100px, 200px);
         font-size: 3rem;
         max-width:40%;
         font-family: $font-family;
@@ -18,42 +23,101 @@ body{
         font-family: $font-one;
         font-size: larger;
         color:  black;
-
+        
     }
-    .imgs{
-        transform: translate(700px,100px);
+    .fixed-action-btn.my-float-btn {
+        position: fixed;
+        right: 0;;
+        bottom: 15%;
+        padding-top: 15px;
+        text-decoration: none;
+        list-style-type: none;
+        width: 8%;
+        height: 9%;
+        .wapp{
+            width: 30px;
+            height: 30px;
+        }
     }
+    .home{
+        .intro1{
+            width: 45%;
+            height: 40%;
+            transform: translate(800px, -180px);
+        }
+        
+    }   
     h1{
+        
         text-align: center;
-        font-style: italic;
+        font-family: $font-six;
+        color:  rgb(0, 0, 0);
     }
     h2{
         padding-left: 75px;
     }
-    // .home{
-    //     background-color: rgb(149, 120, 177) ;
-    // }
-    .carousel_control_prev {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        z-index: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 15%;
-        padding: 0;
-        color: black;
-        text-align: center;
-        background: 0 0;
-        border: 0;
-        opacity: .5;
-        transition: opacity .15s ease;
+    
+    .campera1{
+        position: relative;
+    border: px solid transparent;
+    border-radius: 16px;
+    background: rgb(114, 144, 144);
+    background-clip: padding-box;
+    padding: 5px;
     }
-}
-.carousel-item{
-    display: inline-blck;
-    .especificaciones1{
+
+    
+    .campera1{
+        width: 80%;
+        height: 80%;
+        transition: 0.5s;
+        object-fit: cover;
+    }
+    .campera1:hover{
+        transform: scale(1.2);
+    }
+ 
+     
+    .campera1::after{
+
+        position: absolute;
+        top: -4px; bottom: -4px;
+        left: -4px; right: -4px;
+        background: linear-gradient(#a42e6e, #783057);
+        content: '';
+        z-index: -1;
+        border-radius: 16px;
+    
+    }
+    .d-block{
+        @extend.campera1
+    }
+        
+        .carousel-control-prev {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 15%;
+            padding: 0;
+            color: black;
+            text-align: center;
+            background: 0 0;
+            border: 0;
+            opacity: .5;
+            transition: opacity .15s ease;
+            .carousel_control_prev_icon{
+                transform: translate(0px, -1000px);
+            }
+        }
+        
+
+    .carousel-item{
+        display: inline-blck;
+        .especificaciones1{
        transform: translate(1000px,-450px);
        font-size: x-large;
        font-style: italic ;
@@ -61,17 +125,145 @@ body{
     
     
 }
-.sectioncontact{
-    min-height: 80vh;
-    padding-left: 40px;
-    display: flex;
+.sectiontienda{
+    font-size:x-large;
+    min-height: 80vh ;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
     justify-content: space-between;
+    .mapas{
+        color: cyan;
+        text-decoration: none;
+        list-style-type: none;
+    }
+    ul{
+        list-style-type: none;
+    }
+}
+.contacto{
+    .titlecontact{
+        margin-top: 5%;
+    }
+    min-height: 80vh;
+    .sectioncontact2{
+        gap: 20px;
+        display: flex;
+        flex-direction: row;
+        margin-left: 15%;
+        text-align: center;
+        font-size: x-large;
+        font-family: $font-two;
+    }
+    .sectioncontact1{
+        gap: 20px;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 25px;
+        margin-left: 15%;
+        text-align: center;
+        font-size: x-large;
+        font-family: $font-two;
+    }
+    .sectioncontact{
+        gap: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+    justify-content: space-evenly;
     font-size: x-large;
     font-family: $font-two;
-    display: grid;
-    grid-template-columns: repeat();
-    grid-template-columns: repeat();
-    gap:fghfgh ;
-    grid-template-areas: fghfghfg;
-
+}
+}
+@media screen and (max-width:720px){
+    header .navbar ul{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0.2%;
+        align-items:flex-start ;
+        justify-content: space-evenly;
+    }
+    .camperas{
+        display: grid;
+        gap:1px ;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas:
+        "img1 img2"
+        "img3 img4";
+    }
+    .remeras{
+        @extend .camperas
+    }
+    .buzos{
+        @extend .camperas
+    }
+    .sneakers{
+        @extend .camperas
+    }
+    .personalizables{
+        @extend .camperas
+    }
+    .camp1{
+        grid-area:img1 ;
+    }
+    .camp2{
+        grid-area:img2 ;
+    }
+    .camp3{
+        grid-area: img3 ;
+    }
+    .camp4{
+        grid-area:img4 ;
+    }
+    .contacto{
+        .titlecontact{
+            align-items: center;
+            margin-left: 15% ;
+        }
+        min-height: fit-content;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-top: 0px;
+        .sectioncontact2{
+            margin-bottom: 10px;
+            .consultas{
+                margin-bottom:5px ; 
+            }
+        }
+        .sectioncontact{
+            margin-left: 15%;
+            .email{
+                margin-left: 10%;
+                transform: translate(-17px, 0px);
+            }
+            input{
+                line-height:0 ;
+            }
+        }
+    }
+    .home{
+        margin-left: 50px;
+        .frase{
+            transform: none; 
+        }
+        .intro1{
+            max-width: fit-content;
+            width: 80%;
+            transform: none; 
+        }
+        .intro2{
+            max-width: fit-content;
+            width: 80%;
+            display: none;
+        }
+}
+.home{
+    .intro1{
+        margin-bottom:10px;   
+    }
+}
+}
 }
